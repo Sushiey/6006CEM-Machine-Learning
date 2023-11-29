@@ -53,7 +53,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 linear_model = LinearRegression()
 linear_model.fit(X_train, y_train)
 
-# ARIMA Model (example, actual parameters may vary)
+# ARIMA Model
 arima_model = ARIMA(y_train, order=(1, 1, 1))
 arima_fit = arima_model.fit()
 
